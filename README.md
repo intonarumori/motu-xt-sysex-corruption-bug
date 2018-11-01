@@ -17,7 +17,7 @@ Let's make it happen!
 - to demonstrate this we generated valid SysEx messages that get corrupted in the [test-suite-1](test-suite-1) folder
 - by setting up the XT to forward incoming SysEx messages from IN 8 to OUT 8, then using a separate USB-to-MIDI interface to send and receive messages from these ports we were able to verify our assumptions (see figure 2)
 
-![Figure 1](figure2.jpg)
+![Figure 2](figure2.jpg)
 
 # Further conclusions
 
@@ -35,11 +35,22 @@ please download the files from the [test-suite-1](test-suite-1) folder, test the
 To do this experiment please follow our instructions:
 
 - Disconnect all MIDI cables from the device
-- Set up you unit to forward MIDI messages from IN 8 to OUT 8 using Clockworks
+- Set up you unit to forward MIDI messages from IN 8 to OUT 8 using Clockworks (see figure 3)
+
+![Figure 3](figure3.png)
+
 - Connect your computer to the XT using the front panel MIDI ports (in 8 and out 8). For this connection you can use any MIDI-to-USB cable or device such as the M-Audio Uno, M-Audio Midisport 2x2 or something similar
 - Use a SysEx librarian to transmit MIDI SysEx messages. We recommend Elektron C6 on Mac and Windows.
 - To receive the SysEx messages coming from MIDI out 8 you can use C6 or any SysEx librarian for your operating system. On MacOS you can use Snoize MIDI monitor
 - Save the received SysEx messages in a separate folder and send the results back to us
+- Also include the ROM version on your unit visible in the Clockworks editor (see Figure 3)
+
+What we are looking for is basically:
+- for examples suffixed with `corrupted` we expect the message to get corrupted in the XT, an easy way to see this is to compare the size of the sent and received message, marked with red on Figure 2
+- for examples suffixed with `fine` we expect the messages to match the original, marked in green on Figure 2
+- If you experience different results please report it to us
+
+![Figure 2](figure2.jpg)
 
 
 # Resources
