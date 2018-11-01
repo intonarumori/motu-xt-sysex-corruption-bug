@@ -14,7 +14,7 @@ Let's make it happen!
 
 - **Data corruption occurs when two consecutive bytes in the positions of 64, 128, 192, 256, 320 etc. have the same value in the SysEx message (see figure 1)**
 ![Figure 1](figure1.png)
-- to demonstrate this we generated valid SysEx messages that get corrupted in the `test-suite-1` folder
+- to demonstrate this we generated valid SysEx messages that get corrupted in the [test-suite-1](test-suite-1) folder
 - by setting up the XT to forward incoming SysEx messages from IN 8 to OUT 8, then using a separate USB-to-MIDI interface to send and receive messages from these ports we were able to verify our assumptions (see figure 2)
 
 ![Figure 1](figure2.jpg)
@@ -30,7 +30,7 @@ Let's make it happen!
 # How can you help us
 
 Run our test suite on your XT unit so we can confirm that these results can not only be demonstrated on our specific unit but all XT units.
-please download the files from the `test-suite-1` folder, test them with your device and report your findings back to us.
+please download the files from the [test-suite-1](test-suite-1) folder, test them with your device and report your findings back to us.
 
 To do this experiment please follow our instructions:
 
